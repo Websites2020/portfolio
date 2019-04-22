@@ -16,10 +16,12 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/myscript.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/mycss.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
@@ -33,12 +35,12 @@
 					<div id="header" class="skel-panels-fixed">
 						<div id="logo">
 							<h1><a href="index.html">Daniel Button</a></h1>
-							<span class="tag">Web Programmer</span>
+							<span class="tag">Back End Web Programmer</span>
 						</div>
 						<nav id="nav">
 							<ul>
 								<li class="active"><a href="#banner">About Me</a></li>
-								<li><a href="#extra">Original Work</a></li>
+								<li><a href="#extra">My Projects</a></li>
 								<li><a href="#main">Skills</a></li>
 								<li><a href="#footer">Contact</a></li>
 							</ul>
@@ -48,49 +50,72 @@
 				<!-- Banner -->
 					<div id="banner" class="container">
 						<section>
-							<p>My Name is <strong>Daniel Button</strong>. &nbsp;&nbsp;I got started programming during the summer of 2018 by taking a coding bootcamp in Washington, DC.  &nbsp;&nbsp;I did the program because I had always been interested in computers and thought a bootcamp would be a good way to learn the basics of web development in a short period of time.  &nbsp;&nbsp;Since completing the program, I have used the skills I acquired to build my own websites and apps, volunteer, and study PHP, Python, Perl, C, C#, .NET, WordPress, XML, and Java.</p>
-							<a href="#extra" class="button medium">My Projects</a>
+							<p>My Name is <strong>Daniel Button</strong>. &nbsp;&nbsp;I got started programming during the summer of 2018 by taking a coding bootcamp in Washington, DC.  &nbsp;&nbsp;I did the program because I had always wanted to build my own websites and thought a bootcamp would be a good way to learn the basics to do so in a short period of time.  &nbsp;&nbsp;Since completing the program, I have used the skills I acquired to build my own apps and contribute to others.</p>
+							<a href="#extra" class="button medium">See My Projects</a>
 							<br><br>
 						</section>
 					</div>
 
 				<!-- Extra -->
 					<div id="extra">
-						<br>
 						<div class="container">
+							<div class="sort" style="text-align: center;">
+								<a id="sortall" class="button small" href="#extra">All Work</a>
+								<a id="sortclass" class="button small" href="#extra">Class Work</a>
+								<a id="sortper" class="button small" href="#extra">Personal Work</a>
+							</div>
+							<br>
 							<div class="row no-collapse-1">
-								<section class="4u" style="width:50%"> <a href="https://lychee-pudding-75464.herokuapp.com/" class="image featured" target="_blank"><img src="images/dealership.png" alt=""></a>
+								<section id="fetch" class="4u" style="width:50%"> <a href="https://danielb3.github.io/fetch/" class="image featured" target="_blank"><img src="images/fetch.png" alt=""></a>
+									<div class="box">
+										<p>HTML, CSS, JavaScript</p>
+										<a href="https://danielb3.github.io/fetch/" class="button" target="_blank">Site</a>
+										<a href="https://github.com/danielb3/fetch" class="button" target="_blank" style="background: blueviolet;">Code</a>
+									</div>
+								</section>
+
+								<section id="car" class="4u" style="width:50%; margin: 0 0 2em 0"> <a href="https://lychee-pudding-75464.herokuapp.com/" class="image featured" target="_blank"><img src="images/dealership.png" alt=""></a>
 									<div class="box">
 										<p>HTML, CSS, Node, Express, Heroku</p>
 										<a href="https://lychee-pudding-75464.herokuapp.com/" class="button" target="_blank">Site</a>
-										<a href="https://github.com/danielb3/carDealer-nodejs" class="button" target="_blank">Code</a>
+										<a href="https://github.com/danielb3/carDealer-nodejs" class="button" target="_blank" style="background: blueviolet;">Code</a>
 									</div>
 								</section>
 								
-								<section class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://shielded-thicket-55175.herokuapp.com/" class="image featured" target="_blank"><img src="images/newscraper.png" alt=""></a>
+								<section id="news" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://shielded-thicket-55175.herokuapp.com/" class="image featured" target="_blank"><img src="images/newscraper.png" alt=""></a>
 									<div class="box">
 										<p>HTML, CSS, Node, Express, Axios, jQuery, Heroku</p>
 										<a href="https://shielded-thicket-55175.herokuapp.com/" class="button" target="_blank">Site</a>
-										<a href="https://github.com/danielb3/newsScraper-nodejs" class="button" target="_blank">Code</a>
+										<a href="https://github.com/danielb3/newsScraper-nodejs" class="button" target="_blank" style="background: blueviolet;">Code</a>
 									</div>
 								</section>
 
-								<section class="4u" style="width: 50%;"> <a href="https://calm-bastion-82404.herokuapp.com/" class="image featured" target="_blank"><img src="images/timesheet.png" alt=""></a>
+								<section id="time" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://calm-bastion-82404.herokuapp.com/" class="image featured" target="_blank"><img src="images/timesheet.png" alt=""></a>
 									<div class="box">
 										<p>HTML, Bootstrap, Node, Express, jQuery, AJAX, MongoDB, Heroku</p>
 										<a href="https://calm-bastion-82404.herokuapp.com/" class="button" target="_blank">Site</a>
-										<a href="https://github.com/danielb3/timesheet-nodejs" class="button" target="_blank">Code</a>
+										<a href="https://github.com/danielb3/timesheet-nodejs" class="button" target="_blank" style="background: blueviolet;">Code</a>
 									</div>
 								</section>
 
-								<section class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://arcane-everglades-53396.herokuapp.com/" class="image featured" target="_blank"><img src="images/survey.png" alt=""></a>
+								<section id="survey" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://arcane-everglades-53396.herokuapp.com/" class="image featured" target="_blank"><img src="images/survey.png" alt=""></a>
 									<div class="box">
-										<p>HTML, CSS, Node, Express, Passport, jQuery, AJAX, Heroku</p>
+										<p>HTML, Bootstrap, Node, Express, Passport, jQuery, AJAX, Heroku</p>
 										<a href="https://arcane-everglades-53396.herokuapp.com/" class="button" target="_blank">Site</a>
-										<a href="https://github.com/danielb3/surveyapp-node" class="button" target="_blank">Code</a>
+										<a href="https://github.com/danielb3/surveyapp-node" class="button" target="_blank" style="background: blueviolet;">Code</a>
 									</div>
 								</section>
+
+								<section id="coin" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://shielded-shelf-54556.herokuapp.com/" class="image featured" target="_blank"><img src="images/coindesk.png" alt=""></a>
+									<div class="box">
+										<p>HTML, Bootstrap, Node, Express, jQuery, AJAX, Heroku</p>
+										<a href="https://shielded-shelf-54556.herokuapp.com/" class="button" target="_blank">Site</a>
+										<a href="https://github.com/danielb3/coindeskapi" class="button" target="_blank" style="background: blueviolet;">Code</a>
+									</div>
+								</section>
+
 							</div>
+
 							<!-- <div class="row no-collapse-1">
 								<section class="4u"> <a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
 									<div class="box">
@@ -151,9 +176,11 @@
 		<div id="footer" class="wrapper style2">
 			<div class="container">
 				<section>
-					<header class="major">
-						<h2>Drop me a line</h2>
+					<header class="major" >
+						<h2>Connect with Me</h2>
 						<span class="byline"><a style="color: white; text-decoration: none;" href="http://www.linkedin.com/in/danielbutton">linkedin.com/in/danielbutton</a></span>
+						
+						<span class="byline"><a style="color: white; text-decoration: none;" href="http://www.github.com/danielb3">github.com/danielb3</a></span>
 					</header>
 					<!-- <form method="post" action="#">
 						<div class="row half">
@@ -189,7 +216,7 @@
 		<div id="copyright">
 			<div class="container">
 				<div class="copyright">
-					<p>Website template by <a href="http://templated.co">TEMPLATED</a><br>Design: <a href="https://templated.co/phaseshift">Phase Shift</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)</p>
+					<p>Template by <a href="http://templated.co">TEMPLATED</a></p>
 					<ul class="icons">
 						<!-- <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
