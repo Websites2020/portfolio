@@ -493,7 +493,7 @@
 	}
 
 	.wrapper.style2 {
-		padding: 6em 0;
+		padding: 4em 0 2em 0;
 		background: #d84780;
 		color: white;
 	}
@@ -501,14 +501,14 @@
 /* Header */
 
 	#header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background: #0F1116;
-		color: #fff;
-		padding: 1.25em 1.25em 1.25em 1.25em;
-		z-index: 100;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		background: #0F1116 !important;
+		color: #fff !important;;
+		padding: 1.25em 1.25em 1.25em 1.25em !important;
+		z-index: 100 !important;
 	}
 
 /* Logo */
