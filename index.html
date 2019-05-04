@@ -1,235 +1,148 @@
 <!DOCTYPE HTML>
 <!--
-	Phase Shift by TEMPLATED
+	Epilogue by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
 	<head>
 		<title>Daniel Button - Portfolio</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<script src="js/myscript.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/mycss.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
 
-		<!-- Wrapper -->
-			<div class="wrapper style1">
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Daniel Button</h1>
+					<p>Back End Web Programmer</p>
+				</div>
+			</header>
 
-				<!-- Header -->
-					<div id="header" class="skel-panels-fixed" sytle="">
-						<div id="logo">
-							<h1><a href="index.html">Daniel Button</a></h1>
-							<span class="tag">Back End Web Programmer</span>
-						</div>
-						<nav id="nav">
-							<ul>
-								<li class="active"><a href="#banner">About Me</a></li>
-								<li><a href="#extra">My Projects</a></li>
-								<li><a href="#main">Skills</a></li>
-								<li><a href="#footer">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
 				<!-- Banner -->
-					<div id="banner" class="container">
-						<section>
-							<br>
-							<img src="images/danielbutton.png" height="250px">
-							<br>
-							<p>My name is <strong>Daniel Button</strong>. &nbsp;&nbsp;I have always been building websites ever since elementry school when I got my first computer, a Compaq Presario, and built a website that played a music video that I uploaded from an Ace of Base CD belonging to my sister. &nbsp;&nbsp;But that was just for fun.  I didn't get serious about programming until the spring of 2018 when I took a coding bootcamp offered at George Washington University.  &nbsp;&nbsp;I did the coding program over both the UI/UX and data science programs because I enjoy the combination of creative thinking and logical problem solving involved in building web applications. &nbsp;&nbsp;Since completing the program, I have used the skills I acquired to learn additional programming languages and build my own web apps.</p>
-							<!-- <a href="#extra" class="button medium" style="background: darkblue">See My Work</a> -->
-							
-						</section>
-					</div>
+					<section id="intro" class="main">
+						<span class="icon fa-diamond major"></span>
+						<h2>Welcome to my Portfolio</h2>
+						<p>The projects displayed here are apps that I have created by myself and that I think showcase the progression of my coding ability over time.  All these projects are full stack web apps, though I usually prefer working with the back-end.</p>
+						<ul class="actions">
+							<li><a href="#items" class="button big">Learn More</a></li>
+						</ul>
+					</section>
 
-				<!-- Extra -->
-					<div id="extra">
-						<div class="container">
-							<br>
-							<div class="sort" style="text-align: center;">
-								<a id="sortall" class="button small" style="background: black" href="#extra">All Work</a>
-								<a id="sortclass" class="button small" style="background: black" href="#extra">Class Work</a>
-								<a id="sortper" class="button small" style="background: black" href="#extra">Personal Work</a>
-							</div>
-							<br>
-							<div class="row no-collapse-1">
-								<section id="fetch" class="4u" style="width:50%"> <a href="https://danielb3.github.io/fetch/" class="image featured" target="_blank"><img src="images/fetch.png" alt=""></a>
-									<div class="box">
-										<p>HTML, CSS, JavaScript, Fetch</p>
-										<a href="https://danielb3.github.io/fetch/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/fetch" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
+				<!-- Items -->
+					<section id="items" class="main items">
+						<article class="item">
+							<header>
+								<a href="https://danielb3.github.io/fetch/" target="_blank"><img src="images/fetch.png" alt="" /></a>
+								<h3>June 2018</h3>
+							</header>
+							<p>Final project from my full stack web development bootcamp where we built a web app around a single technology.  My technology was the fetch() method, which I used to request data from the dog.ceo API.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/fetch" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="https://lychee-pudding-75464.herokuapp.com/" target="_blank"><img src="images/dealership.png" alt="" /></a>
+								<h3>April 2019</h3>
+							</header>
+							<p>A simple website running on a Nodejs server.  Uses vanilla JavaScript and HTML/CSS</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/carDealer-nodejs" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="https://shielded-thicket-55175.herokuapp.com/" target="_blank"><img src="images/newscraper.png" alt="" /></a>
+								<h3>April 2019</h3>
+							</header>
+							<p>This Node.js app scrapes news articles from a news website using Axios and the jQuery load function, then displays the results below. jQuery miniPreview is used to retrieve page previews when hovering over a link.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/newsScraper-nodejs" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="https://calm-bastion-82404.herokuapp.com/" target="_blank"><img src="images/timesheet.png" alt="" /></a>
+								<h3>April 2019</h3>
+							</header>
+							<p>Bootstrap styled Node.js app interacting with a MongoDB database using CRUD functions through AJAX requests, with the results then being displayed in a dynamically created table.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/timesheet-nodejs" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="https://arcane-everglades-53396.herokuapp.com/" target="_blank"><img src="images/survey.png" alt="" /></a>
+								<h3>April 2019</h3>
+							</header>
+							<p>A Node.js app that records the responses to a survey using a MongoDB database and uses Passport.js to authenticate a log in to an admin page where the survey results from the MongoDB database are displayed using a Chart.js pie chart. Bootstrap is used for styling.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/surveyapp-node" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="https://shielded-shelf-54556.herokuapp.com/" target="_blank"><img src="images/coindesk.png" alt="" /></a>
+								<h3>April 2019</h3>
+							</header>
+							<p>A Bootstrap styled Node.js app that retrieves pricing data from the CoinDesk.com API using Axios, that is being initiated by an AJAX call from the front-end, then returns the data to the user by displaying it in a Google chart.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/danielb3/coindeskapi" target="_blank" class="button">Code</a></li>
+							</ul>
+						</article>
+					</section>
 
-								<section id="car" class="4u" style="width:50%; margin: 0 0 2em 0"> <a href="https://lychee-pudding-75464.herokuapp.com/" class="image featured" target="_blank"><img src="images/dealership.png" alt=""></a>
-									<div class="box">
-										<p>HTML, CSS, Node, Express, Heroku</p>
-										<a href="https://lychee-pudding-75464.herokuapp.com/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/carDealer-nodejs" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
-								
-								<section id="news" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://shielded-thicket-55175.herokuapp.com/" class="image featured" target="_blank"><img src="images/newscraper.png" alt=""></a>
-									<div class="box">
-										<p>HTML, CSS, Node, Express, Axios, jQuery, Heroku</p>
-										<a href="https://shielded-thicket-55175.herokuapp.com/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/newsScraper-nodejs" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
-
-								<section id="time" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://calm-bastion-82404.herokuapp.com/" class="image featured" target="_blank"><img src="images/timesheet.png" alt=""></a>
-									<div class="box">
-										<p>HTML, Bootstrap, Node, Express, jQuery, AJAX, MongoDB, Heroku</p>
-										<a href="https://calm-bastion-82404.herokuapp.com/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/timesheet-nodejs" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
-
-								<section id="survey" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://arcane-everglades-53396.herokuapp.com/" class="image featured" target="_blank"><img src="images/survey.png" alt=""></a>
-									<div class="box">
-										<p>HTML, Bootstrap, Node, Express, Passport, jQuery, AJAX, MongoDB, Heroku</p>
-										<a href="https://arcane-everglades-53396.herokuapp.com/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/surveyapp-node" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
-
-								<section id="coin" class="4u" style="width: 50%; margin: 0 0 2em 0"> <a href="https://shielded-shelf-54556.herokuapp.com/" class="image featured" target="_blank"><img src="images/coindesk.png" alt=""></a>
-									<div class="box">
-										<p>HTML, Bootstrap, Google Chart, Node, Express, Axios, jQuery, AJAX, Heroku</p>
-										<a href="https://shielded-shelf-54556.herokuapp.com/" class="button" target="_blank" style="background: teal">Site</a>
-										<a href="https://github.com/danielb3/coindeskapi" class="button" target="_blank" style="background: darkblue">Code</a>
-									</div>
-								</section>
-
-							</div>
-
-							<!-- <div class="row no-collapse-1">
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
-									<div class="box">
-										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
-								</section>
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""></a>
-									<div class="box">
-										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
-								</section>
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
-									<div class="box">
-										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
-								</section>
-							</div> -->
-						</div>
-					</div>
+				<!-- CTA -->
+					<section id="cta" class="main special">
+						<h2>Technology Stack</h2>
+						<p>MERN (Mongo, Express, React, Node)</p>
+						<ul class="actions">
+							<!-- <li><a href="#" class="button big">Get Started</a></li> -->
+						</ul>
+					</section>
 
 				<!-- Main -->
-					<div id="main">
-						<div class="container">
-							<div class="row"> 
-								
-								<!-- Content -->
-								<div class="6u">
-									<section>
-										<ul class="style">
-											<li class="fa fa-wrench">
-												<h3>Back-End</h3>
-												<span>Node.js, Express, Passport, Axios</span> </li>
-											<li class="fa fa-leaf">
-												<h3>Front-End</h3>
-												<span>HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, Fetch</span> </li>
-										</ul>
-									</section>
-								</div>
-								<div class="6u">
-									<section>
-										<ul class="style">
-											<li class="fa fa-cogs">
-												<h3>Database</h3>
-												<span>MongoDB</span> </li>
-											<li class="fa fa-road">
-												<h3>Other</h3>
-												<span>Git, GitHub, GitBash, Visual Studio Code, Heroku</span> </li>
-										</ul>
-									</section>
-								</div>
-							</div>
-						</div>
-					</div>
-
-	</div>
-
-	<!-- Footer -->
-		<div id="footer" class="wrapper style2" style="background: darkblue">
-			<div class="container">
-				<section>
-					<header class="major" >
-						<h2>Connect with Me</h2>
-						<br>
-						<span class="byline"><a style="color: white; text-decoration: none;" href="http://www.linkedin.com/in/danielbutton" target="_blank">linkedin.com/in/danielbutton</a></span>
+				
+					<section id="main" class="main">
+						<header>
+							<h2>About Me</h2>
+						</header>
+						<p>My name is Daniel Button.  I have been building websites ever since elementry school when I got my first computer, a Compaq Presario, and built a website that played a music video that I uploaded from an Ace of Base CD belonging to my sister.   But that was just for fun. I didn't get serious about programming until the spring of 2018 when I took a full-stack web development bootcamp offered at George Washington University.   I did the web development program instead of either the UI/UX program or data science program because I enjoy the combination of both the creative thinking and logical problem solving involved in building web applications.   Since completing the program, I have used the skills I acquired to build my own web apps, some of which are shown here.</p>
 						
-						<span class="byline"><a style="color: white; text-decoration: none;" href="http://www.github.com/danielb3" target="_blank">github.com/danielb3</a></span>
-					</header>
-					<!-- <form method="post" action="#">
-						<div class="row half">
-							<div class="12u">
-								<input class="text" type="text" name="name" id="name" placeholder="Name" />
-							</div>
-						</div>
-						<div class="row half">
-							<div class="12u">
-								<input class="text" type="text" name="email" id="email" placeholder="Email" />
-							</div>
-						</div>
-						<div class="row half">
-							<div class="12u">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-						</div>
-						<div class="row half">
-							<div class="12u">
-								<ul class="actions">
-									<li>
-										<input type="submit" value="Send Message" class="button alt" />
-									</li>
-								</ul>
-							</div>
-						</div>
-					</form> -->
-				</section>
-			</div>
-		</div>
+						<img src="./images/danielbutton.png"
+						style="display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width: 30%;">
+						
+					</section>
+				
 
-	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				<div class="copyright">
-					<p>Phaseshift Template by <a href="https://templated.co/phaseshift">TEMPLATED</a></p>
-					<ul class="icons">
-						<!-- <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li> -->
-					</ul>
-				</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+					</footer>
+
 			</div>
-		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
